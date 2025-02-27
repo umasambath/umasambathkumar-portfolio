@@ -9,7 +9,7 @@ const skills = [
   {
     icon: <Code className="w-10 h-10 text-blue-500" />,
     name: "Frontend Development",
-    tech: "React.js, JavaScript",
+    tech: "React.js, JavaScript ,Next.js , TypeScript",
     description: "Crafting responsive and interactive user interfaces with modern React features and Next.js for optimal performance.",
   },
   {
@@ -60,6 +60,12 @@ const skills = [
     tech: "Scrum, Kanban",
     description: "Operating in agile environments with a focus on continuous delivery.",
   },
+  {
+    icon: <Workflow className="w-10 h-10 text-cyan-500" />,
+    name: "Testing",
+    tech: "Playwright",
+    description: "Ensuring reliability and performance through end-to-end testing in modern development workflows.",
+  }
 ];
 
 export default function Skill() {
@@ -87,7 +93,7 @@ export default function Skill() {
             </div>
             <h3 className="text-center text-base md:text-lg lg:text-3xl font-semibold mb-2">{skill.name}</h3>
             <p className="text-center text-base md:text-lg lg:text-3xl text-gray-600 mb-1">{skill.tech}</p>
-            <p className="text-center text-base md:text-lg lg:text-3xl text-gray-600">{skill.description}</p>
+            <p className="text-center text-base md:text-lg lg:text-3xl text-gray-600 p-7">{skill.description}</p>
           </div>
         ))}
       </div>
